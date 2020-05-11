@@ -33,10 +33,10 @@ public class DealManagement {
 	@FutureOrPresent(message = "Invalid date entered")
 	private Date start_date;
 	
-	@Column(length=10)
+	@Column(length=10)		//ye db mai char type ka hai
 //	@NotEmpty(message = "Deal Rate is mandatory")
-	@PositiveOrZero(message="Only positive or zero value acceptable for Rate")
-	private String rate;
+//	@PositiveOrZero(message="Only positive or zero value acceptable for Rate")
+	private int rate;
 	
 	@Column(columnDefinition = "integer(1)")
 //	@NotEmpty(message = "Deal Type is mandatory")
@@ -76,10 +76,10 @@ public class DealManagement {
 	public void setStart_date(Date start_date) {
 		this.start_date = start_date;
 	}
-	public String getRate() {
+	public int getRate() {
 		return rate;
 	}
-	public void setRate(String rate) {
+	public void setRate(int rate) {
 		this.rate = rate;
 	}
 	public int getType() {

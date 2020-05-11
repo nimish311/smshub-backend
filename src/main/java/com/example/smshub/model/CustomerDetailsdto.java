@@ -5,8 +5,7 @@ public class CustomerDetailsdto {
 	private int customer_id;
 	private String name;
 	private String operator_type;
-
-	
+	private String enterprise;
 	
 	public int getCustomer_id() {
 		return customer_id;
@@ -25,6 +24,12 @@ public class CustomerDetailsdto {
 	}
 	public void setOperator_type(String operator_type) {
 		this.operator_type = operator_type;
+	}
+	public String getEnterprise() {
+		return enterprise;
+	}
+	public void setEnterprise(String enterprise) {
+		this.enterprise = enterprise;
 	}
 }
 

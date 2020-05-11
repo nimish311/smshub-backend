@@ -7,7 +7,7 @@ public class DealDto {
 	private String name;
 	private int validity_prd;
 	private Date start_date;
-	private String rate;
+	private int rate;
 	private int type;
 	private int options;
 	private double value;
@@ -36,10 +36,10 @@ public class DealDto {
 	public void setStart_date(Date start_date) {
 		this.start_date = start_date;
 	}
-	public String getRate() {
+	public int getRate() {
 		return rate;
 	}
-	public void setRate(String rate) {
+	public void setRate(int rate) {
 		this.rate = rate;
 	}
 	public int getType() {

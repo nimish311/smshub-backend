@@ -14,16 +14,10 @@ import com.example.smshub.service.CustomerDetailsService;
 
 @Transactional
 @Service("CustomerDetailsService")
+
 public class CustomerDetailsImpl implements CustomerDetailsService{
 	@Autowired
 	private CustomerDetailsdao customerDetailsDao;
-	
-//	@Override
-//	public List<CustomerDetails> findAll() {
-//		List<CustomerDetails> list = new ArrayList<>();
-//		customerDetailsDao.findAll().iterator().forEachRemaining(list::add);
-//		return list;
-//	}
 
 	@Override
 	public List<CustomerDetails> findAllCustomers() {

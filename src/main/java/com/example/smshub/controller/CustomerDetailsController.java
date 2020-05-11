@@ -30,6 +30,6 @@ public class CustomerDetailsController {
 	@GetMapping("/supplier")
 	@CrossOrigin
 	public ApiResponse<List<CustomerDetails>> listSupplier(){
-    	return new ApiResponse<>(HttpStatus.OK.value(), "Customers fetched successfully", service.findAllSuppliers());
+    	return new ApiResponse<>(HttpStatus.OK.value(), "Suppliers fetched successfully", service.findAllSuppliers());
     }
 }
